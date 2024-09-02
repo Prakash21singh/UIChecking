@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 1px !important;
+  border-radius: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #888989, #4a4e54);
+  border-radius: 50px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #00000000;
+}
+
+@layer utilities {
+  .button {
+    @apply flex-1 bg-button-primary p-2 rounded-xl;
+  }
+  .button-2 {
+    @apply flex-1 bg-button-primary px-2 py-3 rounded-xl;
+  }
+  .button-active {
+    @apply flex-1 bg-button-active p-2 rounded-xl;
+  }
+  .button-shadow {
+    -webkit-box-shadow: 18px 17px 47px 25px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 18px 17px 47px 25px rgba(0, 0, 0, 0.7);
+    box-shadow: 18px 17px 47px 25px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.bg-arrow {
+  background: linear-gradient(to 45deg, #303439, #161718);
+}
+
+.span-bg {
+  background: linear-gradient(to bottom, #373e44, #191b1f);
+}
